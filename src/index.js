@@ -42,6 +42,7 @@ import VectorTileSource from './component/vector-tile-source'
 import WmsSource from './component/wms-source'
 import WmtsSource from './component/wmts-source'
 import XyzSource from './component/xyz-source'
+import ZoomifySource from './component/zoomify-source'
 // #if IS_STANDALONE
 import * as mixin from './mixin'
 import * as olExt from './ol-ext'
@@ -98,6 +99,7 @@ function plugin (Vue, options = {}) {
   Vue.use(WmsSource, options)
   Vue.use(WmtsSource, options)
   Vue.use(XyzSource, options)
+  Vue.use(ZoomifySource, options)
 }
 
 export default plugin
@@ -144,6 +146,7 @@ export {
   WmsSource,
   WmtsSource,
   XyzSource,
+  ZoomifySource,
 // #if IS_STANDALONE
   mixin,
   olExt,
